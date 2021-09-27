@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="iso-8859-1" />
+    <title></title>
+    <style type="text/css">
+        #limiter-browser { background:#ffd800; height:100px; width:100%; position: fixed; top: 0; left: 0; line-height: 100px; display:none; text-align:center; }
+    </style>
+</head>
+<body>
+    <div id="limiter-browser"></div>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.limiterbrowser-1.0.0.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#limiter-browser").limiterbrowser({
+                "text": "Atualize seu navegador!",
+                "browsers": "Chrome",
+                "blockMinVersions": "94"
+            });
+        });
+    </script>
+</body>
+</html>
